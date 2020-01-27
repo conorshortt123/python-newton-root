@@ -9,6 +9,10 @@ def sqrt(x):
     Calculate the square root of argument x.
     """
 
+    # Check that x is a positive number.
+    if x < 0:
+        x *= -1
+
     # Initial guess for the square root.
     z = x / 2.0
 
